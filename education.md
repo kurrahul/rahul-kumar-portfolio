@@ -1,6 +1,12 @@
+---
+layout: default
+title: Education Highlights
+description: Education and professional learning highlights for Rahul Kumar.
+---
+
 # Education Highlights
 
-Return to [Career Highlights](index.md).
+Return to the [portfolio home](./).
 
 ## Highest qualification
 

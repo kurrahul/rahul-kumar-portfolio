@@ -1,6 +1,12 @@
+---
+layout: default
+title: Architecture Notes
+description: Public-safe architecture notes and engineering principles.
+---
+
 # Architecture Notes
 
-Return to [Career Highlights](index.md).
+Return to the [portfolio home](./).
 
 Add sanitized architecture diagrams and concise explanations of your approach to:
 

@@ -1,9 +1,9 @@
-# Rahul Kumar — Career Highlights (GitHub Pages)
+# Rahul Kumar — Software & Data Engineering Portfolio
 
-This is a Markdown-based portfolio starter to complement a one-page CV.
+This is a Markdown-based portfolio to complement a one-page CV.
 
 ## Files
-- `index.md` — main portfolio page (rename `career-highlights.md` to `index.md` if using that filename)
+- `index.md` — main portfolio page
 - `education.md` — education and certifications
 - `projects.md` — project case-study template
 - `architecture.md` — architecture notes
@@ -13,8 +13,8 @@ This is a Markdown-based portfolio starter to complement a one-page CV.
 ## Publish
 1. Create a public GitHub repository, e.g. `career-highlights`.
 2. Upload all files and folders in this ZIP to the repository root.
-3. Make sure the main page is named `index.md`.
-4. Replace placeholders for GitHub username, LinkedIn, email, degree, completion year, employment dates, and project links.
+3. Keep the main page named `index.md`.
+4. Add verified role titles, employment dates, education details, and any public contact links you want to share.
 5. Open **Settings → Pages**.
 6. Under **Build and deployment**, choose **Deploy from a branch**.
 7. Select branch `main` and folder `/ (root)`, then save.

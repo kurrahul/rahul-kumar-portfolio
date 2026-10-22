@@ -1,6 +1,12 @@
+---
+layout: default
+title: Project Case Studies
+description: Public-safe project case studies and engineering highlights.
+---
+
 # Project Case Studies
 
-Return to [Career Highlights](index.md).
+Return to the [portfolio home](./).
 
 Use this structure for each public-safe case study:
 
