@@ -1,0 +1,236 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "{{ site.theme }}";
+
+$ink: #18312f;
+$muted: #50615e;
+$paper: #f5f6f1;
+$teal: #187a6e;
+$coral: #e56f52;
+
+body {
+  background: $paper;
+  color: $ink;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.7;
+}
+
+.page-header {
+  background-color: #18312f;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.035) 0,
+    rgba(255, 255, 255, 0.035) 1px,
+    transparent 1px,
+    transparent 13px
+  );
+  border-bottom: 4px solid $coral;
+  padding: 2.8rem 1rem 2.5rem;
+}
+
+.project-name {
+  color: #f5f6f1;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.project-tagline {
+  color: #c7d8d2;
+  font-size: 1.05rem;
+}
+
+.main-content {
+  max-width: 72rem;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.profile-intro {
+  border-left: 4px solid $teal;
+  margin: 0 0 3rem;
+  padding: 0.1rem 0 0.2rem 1.5rem;
+  text-align: left;
+  animation: rise-in 650ms ease-out both;
+
+  h1 {
+    color: $ink;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 0.6rem;
+  }
+
+  h3 {
+    color: $teal;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $muted;
+    margin: 0.5rem 0;
+  }
+}
+
+.main-content h2 {
+  border-bottom: 1px solid #cbd5cf;
+  color: $ink;
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-top: 2.7rem;
+  padding-bottom: 0.55rem;
+}
+
+.main-content h3 {
+  color: $teal;
+  font-weight: 800;
+}
+
+.main-content a {
+  color: $teal;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: #a94b35;
+  }
+}
+
+.highlights {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.25rem 0 2.5rem;
+}
+
+.highlight {
+  background: #fff;
+  border: 1px solid #dce3dd;
+  border-top: 3px solid $teal;
+  min-width: 0;
+  padding: 1.25rem 1.3rem 1.35rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  animation: rise-in 650ms ease-out both;
+
+  &:nth-child(2) {
+    border-top-color: $coral;
+    animation-delay: 90ms;
+  }
+
+  &:nth-child(3) {
+    border-top-color: #d5a52f;
+    animation-delay: 180ms;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 24px rgba(24, 49, 47, 0.09);
+    transform: translateY(-3px);
+  }
+
+  h3 {
+    color: $ink;
+    font-size: 1.05rem;
+    margin: 0.55rem 0 0.35rem;
+  }
+
+  p {
+    color: $muted;
+    font-size: 0.92rem;
+    margin: 0;
+  }
+}
+
+.highlight-number {
+  color: $coral;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+}
+
+.main-content table {
+  display: table;
+  font-size: 0.93rem;
+  width: 100%;
+}
+
+.main-content th {
+  color: $ink;
+}
+
+.main-content td,
+.main-content th {
+  border-color: #dce3dd;
+  padding: 0.7rem 0.8rem;
+}
+
+.main-content blockquote {
+  background: #edf2ed;
+  border-left-color: $coral;
+  color: $muted;
+  padding: 0.8rem 1rem;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header {
+    padding: 2rem 1rem 1.8rem;
+  }
+
+  .project-name {
+    font-size: 1.9rem;
+  }
+
+  .main-content {
+    padding: 1.7rem 1.2rem 3rem;
+  }
+
+  .profile-intro {
+    margin-bottom: 2.2rem;
+    padding-left: 1rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content table {
+    font-size: 0.82rem;
+  }
+
+  .main-content td,
+  .main-content th {
+    padding: 0.55rem 0.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
